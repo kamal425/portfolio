@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MERN Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+<!-- NAV -->
+<nav>
+  <h2>Kamal Kumar</h2>
+
+  <div class="right">
+  <div class="theme-btn" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div onclick="toggleMode()">🌙</div>
+  <ul>
+    <li onclick="go('about')">About</li>
+    <li onclick="go('skills')">Skills</li>
+    <li onclick="go('education')">Education</li>
+    <li onclick="go('training')">Training</li>
+    <li onclick="go('projects')">Projects</li>
+    <li onclick="go('certificates')">Certificates</li>
+    <li ><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>I am <span id="typing"></span></h1>
+    <p>MERN Stack Developer</p>
+
+    <div class="btn-group">
+    <a href="contact.html">
+    <button class="btn">Hire Me</button>
+    </a>
+    <a href="resume.pdf" download>
+      <button class="btn">Download Resume</button>
+    </a>
+    </div>
+
+  </div>
+  <div class="profile-pic">
+  <img src="profile.jpg" alt="Kamal">
+  </div>
+</div>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About me...</h2>
+
+  <div class="about-box">
+
+    <p><i class="fas fa-check-square"></i> Hi, I'm Kamal Kumar from Lucknow, Uttar Pradesh, India.</p>
+
+    <p><i class="fas fa-check-square"></i> Currently I am pursuing Graduation in B.Tech Computer Science and Engineering from Goel Institute of Technology and Management, Lucknow.& my Graduation will be completed in the year 2026.</p>
+
+    <p><i class="fas fa-check-square"></i> My love for coding always makes me eager to improve my skills and expand my knowledge.</p>
+
+    <p><i class="fas fa-check-square"></i> I enjoy building responsive, user-friendly, and visually appealing web applications using HTML, CSS, JavaScript, and various frameworks.</p>
+
+    <p><i class="fas fa-check-square"></i> As a software engineer, my goals are to continuously enhance my coding skills, stay updated with industry trends, and contribute to innovative projects that make a positive impact.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-box"><i class="fab fa-html5"></i><p>HTML</p></div>
+    <div class="skill-box"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+    <div class="skill-box"><i class="fab fa-js"></i><p>JS</p></div>
+    <div class="skill-box"><i class="fab fa-react"></i><p>React</p></div>
+    <div class="skill-box"><i class="fab fa-node"></i><p>Node</p></div>
+    <div class="skill-box"><i class="fas fa-database"></i><p>MongoDB</p></div>
+    <div class="skill-box"><i class="fas fa-server"></i><p>Express.js</p></div>
+    <div class="skill-box"><i class="fab fa-git-alt"></i><p>Git</p></div>
+    <div class="skill-box"><i class="fab fa-github"></i><p>GitHub</p></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>B.Tech – Computer Science & Engineering (2022–2026)</h3>
+    <p>Goel Institute of Technology & Management – 7.7 CGPA</p>
+  </div>
+
+  <div class="card">
+    <h3>Class XII – 70%</h3>
+    <p>BAPPA SRI NARAYAN VOCATIONAL INTER COLLEGE, Lucknow</p>
+  </div>
+
+  <div class="card">
+    <h3>Class X – 77%</h3>
+    <p>ARJUNGANJ VIDYA MANDIR INTER COLLEGE, Lucknow</p>
+  </div>
+</section>
+
+<!-- TRAINING -->
+<section id="training">
+  <h2>Training</h2>
+  
+  <div class="card">
+    <h3>Summer Training – MERN Full Stack Development</h3>
+    <p>Softpro India, Lucknow</p>
+<ul>
+<li>Completed a structured training focused on the MERN Stack (MongoDB, Express.js, React.js, Node.js).</li>
+<li>Developed hands-on web applications and RESTful APIs under the guidance of industry experts.</li>
+<li>Gained practical experience in frontend development using React and backend integration with Node.js and Express.js.</li>
+</ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>🍕 Pizza Burger Website</h3>
+    <p>A responsive food ordering website with modern UI and mobile-friendly design.</p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+
+    <a href="https://your-live-demo-link.com" target="_blank">
+      <button class="btn">Live Demo</button>
+    </a>
+
+    <a href="https://github.com/your-github-repo" target="_blank">
+      <button class="btn">GitHub</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>🥗 Care Diet Pro Website</h3>
+    <p>A health and diet website that provides nutrition information and responsive user experience.</p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+
+    <a href="https://your-live-demo-link.com" target="_blank">
+      <button class="btn">Live Demo</button>
+    </a>
+
+    <a href="https://github.com/your-github-repo" target="_blank">
+      <button class="btn">GitHub</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>💻 Responsive Portfolio</h3>
+    <p>A personal portfolio website showcasing skills, projects, certificates, and contact details.</p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+
+    <a href="https://your-live-demo-link.com" target="_blank">
+      <button class="btn">Live Demo</button>
+    </a>
+
+    <a href="https://github.com/your-github-repo" target="_blank">
+      <button class="btn">GitHub</button>
+    </a>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <h2>Certificates</h2>
+
+  <div class="card">
+    <h3>🎓 Innovation Design Thinking (AKTU Kalam Pragati)</h3>
+    <p>Completed certification focused on creativity, problem-solving and innovation.</p>
+  </div>
+
+  <div class="card">
+    <h3>🎓 Web Development Certificate</h3>
+    <p>Learned HTML, CSS, JavaScript fundamentals.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>want any work to be done by me?</h2>
+  
+  <a href="contact.html">
+  <button>Contact me</button>
+ </a>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© Kamal Kumar</p>
+
+  <p>Email id: kamalkumar226001@email.com</p>
+  <p>Phone No: 6306839016</p>
+
+  <div class="social">
+
+  <a href="https://www.facebook.com/KamalKumar" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://www.instagram.com/kamal_kumar_100" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/kamal-kumar-78509b352" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="https://github.com/kamal425" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+  <p>copyright © <span id="year"></span> All rights reserved | Made by Kamal</p>
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
